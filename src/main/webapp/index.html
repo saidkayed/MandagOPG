@@ -3,8 +3,60 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="ClockStyle.css" rel="stylesheet" type="text/css"/>
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Main Page</h1>
+
+        <div>
+            There is no business model involved with this CA. Your task will be to produce a number of static HTML pages with the sole purpose of “learning”.<br>
+            They all include some JavaScript + DOM manipulation running on the client without any server interaction (AJAX).<br>
+            When completed your pages must be hosted on a Tomcat Server hosted on your own domain name and (for yellow and red groups) only accessible via HTTPS.<br><br>
+        </div>
+        <div>Tobias Jensen<br></div>
+        <div>Said Kayed<br></div>
+        <div>Sercan Atici<br></div>
+
+        <form action="calculator.html">
+            <input type="submit" name="Page 1 - Calculator" value="Page 1 - Calculator">
+        </form>
+        <form action="">
+            <input type="submit" name="Page 2 - Typing Speed Tester" value="Page 2 - Typing Speed Tester">
+        </form>
+        <form action="">
+            <input type="submit" name="Page3 - Dynamic UI manipulation" value="Page3 - Dynamic UI manipulation">
+        </form>
+        <form action="">
+            <input type="submit" name="Page4 - Dynamic UI manipulation with data obtained via fetch" value="Page4 - Dynamic UI manipulation with data obtained via fetch">
+        </form>
+
+
+        <main class="main">
+            <div class="clockbox"><!-- clockbox container -->
+                <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewbox="0 0 600 600">
+                <g id="face"><!-- Circlen rundt om uret + hour marks + circlen i midten -->
+                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                </g>
+                <g id="hour"><!-- hour hand -->
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="minute"> <!-- minute hand -->
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="second"> <!-- second hand -->
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                </svg>
+            </div>
+        </main>
+
     </body>
+
+
 </html>

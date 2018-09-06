@@ -23,7 +23,7 @@ var sum = 0;
 function display() {
 
     if (turn) {
-        document.getElementById("display").innerHTML = 0;
+        document.getElementById("display").innerHTML = 0; //skal fikses
         val = event.target.innerText;
        all = document.getElementById("display").innerHTML += val;
     }

@@ -30,4 +30,9 @@ and open the template in the editor.
 	width: 219px;
 }
 
+.t1:hover{
+    color: gray;
+    
+}
+
 

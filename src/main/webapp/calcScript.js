@@ -67,6 +67,14 @@ function display() {
         all2 = document.getElementById("display").innerHTML += val2;
         tal2 = all2;
     }
+    //sletter alt fra calc
+      document.getElementById("clear").onclick = function () {
+             sum = 0;
+             tal1 = 0;
+             tal2 = 0;
+                document.getElementById("display").innerHTML = sum;
+                turn = true;      
+         };
     //NÅR VI ER FÆRDIG OG TRYKKER "=" PÅ LOMMEREGNERNEN, BEGYNDER DEN AT REGNE FOR DIG.
     document.getElementById("summen").onclick = function () {
 
@@ -106,6 +114,7 @@ function display() {
                 turn = true;     
                 break;
         }
+      
 
 // TEST
         console.log(tal2);

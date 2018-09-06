@@ -21,7 +21,7 @@ var turn = true;
 var math;
 var sum = 0;
 function display() {
-
+// VI BEGYNDER MED DET FØRSTE VI INDTASTER IND
     if (turn) {
         //document.getElementById("display").innerHTML = 0; 
         val = event.target.innerText;
@@ -30,7 +30,8 @@ function display() {
 
 
 
-    
+    // HER FINDER DEN UD AF, HVORDAN VI SKAL REGNE VORES REGNESTYKKE, VED AT VI TRYKKER PÅ EN AF DE FIRE VALGMULIGHEDER
+    // PÅ LOMMEREGNEREN. DER GIVES EN UNIKT "MATH" TAL SOM VI SKAL BRUGE TIL VORES SWITCH
 document.getElementById("plus").onclick = function () {
 turn = false;  
 tal1 = all;
@@ -58,7 +59,7 @@ math = 4;
 
 
 
- 
+ // NÅR VI ER FÆRDIG MED AT TASTE DET FØRSTE INPUT KOMMER VI VIDERE HER, HVOR VI SKAL TASTE NR 2 INPUT
 if(!turn){
 
         val2 = event.target.innerText;
@@ -66,10 +67,10 @@ if(!turn){
        all2 = document.getElementById("display").innerHTML += val2;
 tal2 = all2;
 }
-   
+   //NÅR VI ER FÆRDIG OG TRYKKER "=" PÅ LOMMEREGNERNEN, BEGYNDER DEN AT REGNE FOR DIG.
     document.getElementById("summen").onclick = function () {
         
-        
+        //HER BENYTTER VI DET UNIKKE MATH NUMMER.
    switch(math){
        case 1:
                 sum = parseFloat(tal1) + parseFloat(tal2.slice(1,tal2.length));
@@ -100,7 +101,7 @@ tal2 = all2;
                     break;
    }
   
-
+// TEST
         console.log(tal2);
         console.log(tal2.slice(1,tal2.length),"størrelsen");  
         console.log(tal1,"størrelsen på tal1");  

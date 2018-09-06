@@ -5,7 +5,7 @@
  */
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
-const originText = document.querySelector("#origin-text p").innerHTML;
+var originText = document.querySelector("#origin-text p").innerHTML;
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
@@ -104,7 +104,7 @@ function reset() {
     //Set box border to grey;
     testWrapper.style.borderColor = "grey";
     
-    //Chooses a new string //TODO
+    //Chooses a new string
     stringChooser(stringArray);
 }
 
@@ -112,9 +112,9 @@ function reset() {
 //Sets up a new string
 function stringChooser(stringArray){
     
-    
     var rand = Math.floor((Math.random() * 10 +0));
     document.querySelector("#origin-text p").innerHTML = stringArray[rand];
+    originText = stringArray[rand];
     
 }
 

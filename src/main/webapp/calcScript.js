@@ -21,7 +21,7 @@ var turn = true;
 var math;
 var sum = 0;
 function display() {
-// VI BEGYNDER MED DET FØRSTE VI INDTASTER IND
+// VI BEGYNDER MED DET FØRSTE  INPUT SOM VI INDTASTER IND
     if (turn) {
         //document.getElementById("display").innerHTML = 0; 
         val = event.target.innerText;
@@ -31,7 +31,7 @@ function display() {
 
 
     // HER FINDER DEN UD AF, HVORDAN VI SKAL REGNE VORES REGNESTYKKE, VED AT VI TRYKKER PÅ EN AF DE FIRE VALGMULIGHEDER
-    // PÅ LOMMEREGNEREN. DER GIVES EN UNIKT "MATH" TAL SOM VI SKAL BRUGE TIL VORES SWITCH
+    // PÅ LOMMEREGNEREN. DER GIVES EN UNIKT "MATH" TAL SOM VI SKAL BRUGE TIL VORES SWITCH.
 document.getElementById("plus").onclick = function () {
 turn = false;  
 tal1 = all;

@@ -23,7 +23,7 @@ var sum = 0;
 function display() {
 
     if (turn) {
-        document.getElementById("display").innerHTML = 0; //skal fikses
+        //document.getElementById("display").innerHTML = 0; 
         val = event.target.innerText;
        all = document.getElementById("display").innerHTML += val;
     }
@@ -89,6 +89,15 @@ tal2 = all2;
         sum = parseFloat(tal1) / parseFloat(tal2.slice(1,tal2.length));
        document.getElementById("display").innerHTML = sum;
        break;
+       
+             default :
+                    sum = 0;
+                    document.getElementById("display").innerHTML = sum;
+                    break;
+                case 0:
+                     sum = 0;
+                    document.getElementById("display").innerHTML = sum;
+                    break;
    }
   
 

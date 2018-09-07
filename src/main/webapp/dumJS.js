@@ -35,7 +35,7 @@ window.onload= function(){
        document.getElementById("girls").innerHTML = girls.join("<br>");
        document.getElementById("all").innerHTML = all.join("<br>");
     };
-    
+    // refrshing the list
     function refresh_list(){
         var all = boys.concat(girls);
       document.getElementById("boys").innerHTML  = boys.join("<br>");   
@@ -86,14 +86,14 @@ window.onload= function(){
       };
   }
     };
-    
+    //reverse section
     document.getElementById("reverse").onclick = function(){
        allreverse = boys.concat(girls).reverse();
        document.getElementById("all").innerHTML = allreverse.join("<br>");
        console.log(allreverse);
         
     };
-    
+    // sort section
     document.getElementById("sort").onclick = function(){
     
     all_Sort = boys.concat(girls).sort(function(a,b){

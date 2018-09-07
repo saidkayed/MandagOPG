@@ -67,7 +67,7 @@ function display() {
         all2 = document.getElementById("display").innerHTML += val2;
         tal2 = all2;
     }
-    //sletter alt fra calc
+    //sletter alt fra calc 
       document.getElementById("clear").onclick = function () {
              sum = 0;
              tal1 = 0;
